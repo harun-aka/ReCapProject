@@ -11,16 +11,16 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             //CarTest();
-            RentalTest();
+            //RentalTest();
         }
 
-        private static void RentalTest()
-        {
-            RentalManager rentalManager = new RentalManager(new EfRentalDal());
-            var result = rentalManager.Add(new Rental { CarId = 1, CustomerId = 1, RentDate = new DateTime(2010,2,3), ReturnDate=new DateTime(2020,4,5) });
+        //private static void RentalTest()
+        //{
+        //    RentalManager rentalManager = new RentalManager(new EfRentalDal());
+        //    var result = rentalManager.Add(new Rental { CarId = 1, CustomerId = 1, RentDate = new DateTime(2010,2,3), ReturnDate=new DateTime(2020,4,5) });
 
-            Console.WriteLine(result.Message);
-        }
+        //    Console.WriteLine(result.Message);
+        //}
 
         private static void CarTest()
         {
