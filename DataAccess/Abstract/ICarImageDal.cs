@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Abstract
 {
-    public interface IRentalDal: IEntityRepository<Rental>
+    public interface ICarImageDal : IEntityRepository<CarImage>
     {
-        Rental GetRentalByCarId(int carId);
     }
 }

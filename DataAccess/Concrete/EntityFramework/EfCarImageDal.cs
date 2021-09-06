@@ -9,11 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfRentalDal : EfEntityRepositoryBase<Rental, SouthgateContext>, IRentalDal
+    public class EfCarImageDal : EfEntityRepositoryBase<CarImage, SouthgateContext>, ICarImageDal
     {
-        public Rental GetRentalByCarId(int carId)
-        {
-            return Get(r => r.CarId == carId);
-        }
     }
 }
