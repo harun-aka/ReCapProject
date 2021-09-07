@@ -13,7 +13,7 @@ namespace DataAccess.Concrete.EntityFramework
     {
         public Rental GetRentalByCarId(int carId)
         {
-            return Get(r => r.CarId == carId);
+            return GetAll(r => r.CarId == carId).OrderBy(r => r.Id).FirstOrDefault();
         }
     }
 }

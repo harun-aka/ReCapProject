@@ -19,5 +19,12 @@ namespace Business.Constants
 
         public static string CarDailyPriceInvalid = "Araba fiyatı sıfırdan büyük olmalıdır.";
         public static string CarNotReturned = "Araba daha teslim edilmedi.";
+        public static string CarImagesListed = "Resimler listelendi.";
+        public static string CarImageLimitExceded = "En Fazla 5 Resim yüklenebilir.";
+        internal static string CarImageAdded = "Ürün Resmi eklendi.";
+        internal static string CarImageDeleted = "Ürün Resmi silindi.";
+        internal static string CarImageUpdated = "Ürün Resmi güncellendi.";
+        internal static string RentalAdded = "Kiralandı.";
+        internal static string RentalUpdated = "Kiralık Araba güncellendi.";
     }
 }
