@@ -9,6 +9,7 @@ namespace WebAPI.Controllers
 {
     public abstract class ResponseControllerBase : ControllerBase
     {
+        [HttpGet]
         public IActionResult ResponseResult(IResult result)
         {
             if (result.Success)

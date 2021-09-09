@@ -39,7 +39,7 @@ namespace WebAPI.Controllers
         }
 
 
-        [HttpDelete("delete")]
+        [HttpPost("delete")]
         public IActionResult Delete(CarImage carImage)
         {
             return ResponseResult(_carImageService.Delete(carImage));
