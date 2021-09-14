@@ -35,8 +35,6 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<AuthManager>().As<IAuthService>();
             builder.RegisterType<JwtHelper>().As<ITokenHelper>();
 
-            builder.RegisterType<HttpContextAccessor>().As<IHttpContextAccessor>();
-
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();               //Burada artık her uygulama için validation varsa önce onları konrol eder.
                                                                                             //Varsa eğer ne zaman yapılacaksa yapar.
             builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces()

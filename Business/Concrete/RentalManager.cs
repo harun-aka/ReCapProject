@@ -20,6 +20,7 @@ namespace Business.Concrete
         public RentalManager(IRentalDal rentalDal, ICarService carService)
         {
             _rentalDal = rentalDal;
+            _carService = carService;
         }
 
         public IResult Add(Rental rental)
