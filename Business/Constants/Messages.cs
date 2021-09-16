@@ -40,5 +40,7 @@ namespace Business.Constants
         public static string PasswordError = "Şifre hatası.";
         public static string UserNotFound = "Kullanıcı bulunamadı.";
         public static string UserRegistered = "Kullanıcı kaydedildi.";
+        public static string RentalsListed = "Kiralıklar listelendi.";
+        public static string Rentaladded = "Kiralık eklendi.";
     }
 }
