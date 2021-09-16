@@ -44,6 +44,8 @@ namespace WebAPI
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPI", Version = "v1" });
             });
 
+            services.AddCors();
+
             services.AddDependencyResolvers(new ICoreModule[] {  // Bu sayede bütün projelerde olabilecek dependencyleri yani coredakileri eklemek için oluþturduðumuz extension ile ekleriz. 
             new CoreModule()
             });
@@ -59,6 +61,7 @@ namespace WebAPI
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebAPI v1"));
             }
 
+            app.UseCors(builder => builder.WithOrigins("http://localhost:4200").AllowAnyHeader()); //Buradaki sýralama önemli birden fazla site varsa virgülle ayýrýrýz. 
             app.UseHttpsRedirection();
 
             app.UseRouting();

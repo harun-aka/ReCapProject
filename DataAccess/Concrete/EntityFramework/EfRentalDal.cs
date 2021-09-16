@@ -35,7 +35,8 @@ namespace DataAccess.Concrete.EntityFramework
                              select new RentalDetailDto
                              {
                                  BrandName = b.BrandName,
-                                 FullName = u.FirstName + u.LastName,
+                                 FirstName = u.FirstName,
+                                 LastName = u.LastName,
                                  RentDate = r.RentDate,
                                  ReturnDate = r.ReturnDate
                                  

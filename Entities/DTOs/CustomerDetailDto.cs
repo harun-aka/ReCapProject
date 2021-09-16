@@ -1,5 +1,4 @@
-﻿using Core.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -8,20 +7,19 @@ using System.Threading.Tasks;
 
 namespace Entities.DTOs
 {
-    public class RentalDetailDto : IDto
+    public class CustomerDetailDto
     {
-        public string BrandName { get; set; }
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public DateTime RentDate { get; set; }
-        public DateTime? ReturnDate { get; set; }
+        public string CompanyName { get; set; }
 
         [NotMapped]
         public string FullName
         {
             get
             {
-                return String.Concat(this.FirstName, " ", this.LastName);
+                return String.Concat(this.FirstName, " ",  this.LastName);
             }
         }
     }
