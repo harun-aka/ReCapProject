@@ -37,6 +37,11 @@ namespace DataAccess.Concrete.InMemory
             throw new NotImplementedException();
         }
 
+        public CarImageDetailDto GetCarImageDetails(int carId)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Update(Car entity)
         {
             throw new NotImplementedException();
